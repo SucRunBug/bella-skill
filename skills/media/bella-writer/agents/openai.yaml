@@ -1,0 +1,4 @@
+interface:
+  display_name: "bella-writer"
+  short_description: "自媒体文案：平台适配的大纲、文案或定向修订，按当前材料和阶段继续执行"
+  default_prompt: "使用 $bella-writer，根据已有材料完成当前请求。"

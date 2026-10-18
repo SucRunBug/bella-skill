@@ -1,0 +1,4 @@
+interface:
+  display_name: "bella-speaking-coach"
+  short_description: "英语口语陪练：一轮口语练习、具体反馈和复练记录，按当前材料和阶段继续执行"
+  default_prompt: "使用 $bella-speaking-coach，根据已有材料完成当前请求。"

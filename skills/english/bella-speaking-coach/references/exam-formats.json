@@ -1,0 +1,53 @@
+{
+  "checked_on": "2026-10-15",
+  "formats": {
+    "ielts-speaking": {
+      "label": "IELTS Academic / General Training 口语",
+      "rules_url": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-speaking",
+      "rubric_url": "https://ielts.org/cdn/ielts-guides/ielts-speaking-band-descriptors.pdf",
+      "section_seconds": [660, 840],
+      "tasks": {
+        "part1": {"section_seconds": [240, 300], "input_media": []},
+        "part2": {"section_seconds": [180, 240], "prepare_seconds": 60, "answer_seconds": [60, 120], "input_media": []},
+        "part3": {"section_seconds": [240, 300], "input_media": []}
+      }
+    },
+    "pte-academic-2025": {
+      "label": "PTE Academic / UKVI，2025年8月更新后",
+      "rules_url": "https://www.pearsonpte.com/pte-academic/test-format/speaking-writing/",
+      "updates_url": "https://www.pearsonpte.com/pte-updates-2025/",
+      "samples_url": "https://www.pearsonpte.com/teachers/pte-academic-updates-partners-and-teachers/",
+      "tasks": {
+        "read_aloud": {"prepare_seconds": [30, 40], "answer_seconds": null, "input_media": []},
+        "repeat_sentence": {"answer_seconds": 15, "input_media": ["audio"]},
+        "describe_image": {"prepare_seconds": 25, "answer_seconds": 40, "input_media": ["image"]},
+        "retell_lecture": {"prepare_seconds": 10, "answer_seconds": 40, "input_media": ["audio"]},
+        "answer_short_question": {"answer_seconds": 10, "input_media": ["audio"], "score_note": "现行 Academic 页面将此项列为 Listening 计分，不当作独立 Speaking 提分证据"},
+        "summarize_group_discussion": {"prepare_seconds": 10, "answer_seconds": 120, "input_media": ["audio"]},
+        "respond_to_situation": {"prepare_seconds": 10, "answer_seconds": 40, "input_media": ["audio"]}
+      }
+    },
+    "pte-core-2026": {
+      "label": "PTE Core，与 Academic 单独配置",
+      "rules_url": "https://www.pearsonpte.com/pte-core/test-format/speaking-writing/",
+      "tasks": {
+        "read_aloud": {"prepare_seconds": [30, 40], "answer_seconds": null, "input_media": []},
+        "repeat_sentence": {"answer_seconds": null, "input_media": ["audio"], "note": "具体录音时限需用当次官方界面或 Score Guide 核对，不沿用 Academic 的15秒"},
+        "describe_image": {"prepare_seconds": 25, "answer_seconds": 40, "input_media": ["image"]},
+        "respond_to_situation": {"prepare_seconds": 20, "answer_seconds": 40, "input_media": ["audio"]},
+        "answer_short_question": {"answer_seconds": 10, "input_media": ["audio"]}
+      }
+    },
+    "toefl-ibt-2026": {
+      "label": "TOEFL iBT 常规2026版；特殊地区或其他 TOEFL 类别需另查",
+      "rules_url": "https://www.ets.org/toefl/test-takers/ibt/about/content/speaking.html",
+      "structure_url": "https://www.ets.org/toefl/test-takers/ibt/about/content.html",
+      "blueprint_url": "https://www.eu.ets.org/pdfs/toefl/toefl-enki-test-specifications-2026.pdf",
+      "section_seconds": 480,
+      "tasks": {
+        "listen_repeat": {"items": 7, "answer_seconds": [8, 12], "input_media": ["audio"]},
+        "interview": {"items": 4, "answer_seconds": null, "input_media": ["audio"], "note": "题目数依官方蓝图；单题录音时限按当次可读取的官方样题核对"}
+      }
+    }
+  }
+}

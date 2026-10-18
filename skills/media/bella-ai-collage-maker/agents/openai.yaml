@@ -1,0 +1,4 @@
+interface:
+  display_name: "bella-ai-collage-maker"
+  short_description: "拼贴画 B-roll：拼贴静帧、首尾帧、视频提示词与制作包"
+  default_prompt: "使用 $bella-ai-collage-maker，根据已有材料完成当前请求。"

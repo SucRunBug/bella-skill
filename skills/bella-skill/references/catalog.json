@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "skills": [
+    {
+      "name": "bella-speaking-coach",
+      "title": "英语口语陪练",
+      "category": "english",
+      "category_label": "英语",
+      "path": "english/bella-speaking-coach",
+      "aliases": [],
+      "handoff": "已有日常话题、复述材料或考试目标 → 一轮口语练习、具体反馈和复练记录",
+      "excludes": "离线听读网页；没有原始录音时的发音评分",
+      "dependencies": [
+        "Python 3.10+；考试题型和近期题目需联网核实；录音转写后端按需配置"
+      ],
+      "source": "https://github.com/SucRunBug/bella-speaking-coach",
+      "commit": "dc3f21dbb3fbc37f3149454e58361bde7356b466"
+    },
+    {
+      "name": "bella-audio-listening",
+      "title": "英语听力与双语听读",
+      "category": "english",
+      "category_label": "英语",
+      "path": "english/bella-audio-listening",
+      "aliases": [],
+      "handoff": "已有英语音频或带时间戳转写 → 内嵌原声的离线双语听读 HTML",
+      "excludes": "无音频的口语模拟考试；自造音频或时间轴",
+      "dependencies": [
+        "Python 3.10+、ffmpeg/ffprobe；MLX/Metal、CUDA 或可用 ASR 后端"
+      ],
+      "source": "https://github.com/SucRunBug/bella-audio-listening",
+      "commit": "6da92b917b8d9b6609aa1b200f62ce7d5e2b8518"
+    },
+    {
+      "name": "bella-ai4s",
+      "title": "科研助手",
+      "category": "research",
+      "category_label": "科研",
+      "path": "research/bella-ai4s",
+      "aliases": [],
+      "handoff": "已有研究问题、文献、实验数据或论文 → 与当前阶段对应的证据、方案、分析、图表或稿件",
+      "excludes": "脱离证据的结论；普通营销文案",
+      "dependencies": [
+        "Python 3.10+；专业软件、统计库、文献与科研工具随任务检查"
+      ],
+      "source": "https://github.com/SucRunBug/bella-AI4S",
+      "commit": "1d5e23106f03c2747b60a183e48f67c66ba1c8ac"
+    },
+    {
+      "name": "bella-ai-collage-maker",
+      "title": "拼贴画 B-roll",
+      "category": "media",
+      "category_label": "自媒体",
+      "path": "media/bella-ai-collage-maker",
+      "aliases": [
+        "gbro-collage-broll"
+      ],
+      "handoff": "已有口播、观点或概念 → 拼贴静帧、首尾帧、视频提示词与制作包",
+      "excludes": "默认生成 MP4；完整口播剪辑；可编辑分层动画",
+      "dependencies": [
+        "宿主图片生成能力、ffmpeg/ffprobe；外部视频模型仅在明确要求时使用"
+      ],
+      "source": "https://github.com/SucRunBug/bella-ai-collage-maker",
+      "commit": "22d3c3cd9b0f150901f0b78f0710d51a957a6b5a"
+    },
+    {
+      "name": "talking-head-video-packaging",
+      "title": "口播视频剪辑与包装",
+      "category": "media",
+      "category_label": "自媒体",
+      "path": "media/talking-head-video-packaging",
+      "aliases": [
+        "口播视频包装"
+      ],
+      "handoff": "已有原始口播视频或粗剪时间线 → 字幕、人物抠像、配图与包装后的成片",
+      "excludes": "没有剪辑工具时声称已剪辑；重写已定稿文案",
+      "dependencies": [
+        "可连接的 ChatCut Desktop 及对应工具；字幕、抠像、MG 等能力按需检查"
+      ],
+      "source": "https://github.com/SucRunBug/talking-head-video-packaging",
+      "commit": "2a7e5e513ce11220d0789e560ea9b9600b88a4d7"
+    },
+    {
+      "name": "bella-writer",
+      "title": "自媒体文案",
+      "category": "media",
+      "category_label": "自媒体",
+      "path": "media/bella-writer",
+      "aliases": [],
+      "handoff": "已有主题、资料、大纲或草稿 → 平台适配的大纲、文案或定向修订",
+      "excludes": "擅自下载未要求解析的视频；自动发布；从草稿重启整条流程",
+      "dependencies": [
+        "联网检索；可选视频解析依赖见 scripts/requirements.txt"
+      ],
+      "source": "https://github.com/SucRunBug/bella-writer",
+      "commit": "f11458a0256fb4fdf34c9780a60a964b66010161"
+    },
+    {
+      "name": "yanmai-video-reading",
+      "title": "对标视频读取与拆解",
+      "category": "media",
+      "category_label": "自媒体",
+      "path": "media/yanmai-video-reading",
+      "aliases": [],
+      "handoff": "已有指定平台链接或本地视频 → 原始 ASR、可读稿、按讲述顺序整理的线索和画面备注",
+      "excludes": "没有看到视频却声称完成逐帧分析；自动写同款文案",
+      "dependencies": [
+        "Python 3.10+、ffmpeg/ffprobe；可控浏览器和 GPU/Metal ASR 后端按需配置"
+      ],
+      "source": "https://github.com/SucRunBug/yanmai-video-reading",
+      "commit": "9e441e71481ecf311f88d1458b5720b2b2b4ff95"
+    },
+    {
+      "name": "tripo-3d",
+      "title": "3D 建模与游戏资产",
+      "category": "game-3d",
+      "category_label": "3D 游戏",
+      "path": "game-3d/tripo-3d",
+      "aliases": [],
+      "handoff": "已有描述、参考图或模型 → 可验收的模型、绑定、动画或游戏资产接入",
+      "excludes": "自动制作完整游戏；把已有任务重新提交收费生成",
+      "dependencies": [
+        "Python 3.10+、自己的 Tripo API Key；Blender/目标引擎按需配置"
+      ],
+      "source": "https://github.com/SucRunBug/tripo-3d",
+      "commit": "2162e925f1ed88e00e66346ba2b534237b710c9c"
+    }
+  ]
+}

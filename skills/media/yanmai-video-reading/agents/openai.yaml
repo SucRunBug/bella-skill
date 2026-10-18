@@ -1,0 +1,4 @@
+interface:
+  display_name: "yanmai-video-reading"
+  short_description: "对标视频读取与拆解：原始 ASR、可读稿、按讲述顺序整理的线索和画面备注"
+  default_prompt: "使用 $yanmai-video-reading，根据已有材料完成当前请求。"

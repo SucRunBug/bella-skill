@@ -1,0 +1,4 @@
+interface:
+  display_name: "bella-ai4s"
+  short_description: "科研助手：与当前阶段对应的证据、方案、分析、图表或稿件"
+  default_prompt: "使用 $bella-ai4s，根据已有材料完成当前请求。"

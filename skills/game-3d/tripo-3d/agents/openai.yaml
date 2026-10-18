@@ -1,0 +1,4 @@
+interface:
+  display_name: "tripo-3d"
+  short_description: "3D 建模与游戏资产：可验收的模型、绑定、动画或游戏资产接入"
+  default_prompt: "使用 $tripo-3d，根据已有材料完成当前请求。"

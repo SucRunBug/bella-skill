@@ -1,0 +1,4 @@
+interface:
+  display_name: "talking-head-video-packaging"
+  short_description: "口播视频剪辑与包装：字幕、人物抠像、配图与包装后的成片"
+  default_prompt: "使用 $talking-head-video-packaging，根据已有材料完成当前请求。"

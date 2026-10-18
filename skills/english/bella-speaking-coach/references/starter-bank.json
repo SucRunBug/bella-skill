@@ -1,0 +1,283 @@
+{
+  "version": 1,
+  "id": "starter-20261015",
+  "checked_on": "2026-10-15",
+  "scope_note": "少量近期雅思汇编题目、按话题改编题及PTE/TOEFL原创形式练习。不是全量或官方在用题库；PTE/TOEFL本快照未收录近期考生回忆题。",
+  "sources": [
+    {
+      "id": "ielts-format",
+      "url": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-speaking",
+      "title": "IELTS 官方口语形式",
+      "kind": "official",
+      "checked_on": "2026-10-15"
+    },
+    {
+      "id": "vega-202610",
+      "url": "https://www.ieltsvega.com/blog/recent-ielts-speaking-questions-september-october-2026",
+      "title": "IELTSVega 2026年9至10月公开话题汇编",
+      "kind": "third_party",
+      "checked_on": "2026-10-15",
+      "period": "2026年9至10月；页面只给月份，未给单题考试日期",
+      "region": "未按单题核实",
+      "applicable_from": "2026-09-01",
+      "applicable_until": "2026-10-31"
+    },
+    {
+      "id": "joe-202609",
+      "url": "https://joespeaking.com/ielts-speaking-questions/2026-sep-dec",
+      "title": "Joe Speaking 2026年9至12月公开汇编",
+      "kind": "third_party",
+      "checked_on": "2026-10-15",
+      "updated_on": "2026-09-21",
+      "period": "2026年9至12月为该站分类，非官方题库周期",
+      "applicable_from": "2026-09-01",
+      "applicable_until": "2026-12-31"
+    },
+    {
+      "id": "pte-academic-format",
+      "url": "https://www.pearsonpte.com/pte-academic/test-format/speaking-writing/",
+      "title": "Pearson PTE Academic 当前口语与写作形式",
+      "kind": "official",
+      "checked_on": "2026-10-15"
+    },
+    {
+      "id": "pte-core-format",
+      "url": "https://www.pearsonpte.com/pte-core/test-format/speaking-writing/",
+      "title": "Pearson PTE Core 当前形式",
+      "kind": "official",
+      "checked_on": "2026-10-15"
+    },
+    {
+      "id": "toefl-format",
+      "url": "https://www.ets.org/toefl/test-takers/ibt/about/content/speaking.html",
+      "title": "ETS 当前 TOEFL iBT 口语形式",
+      "kind": "official",
+      "checked_on": "2026-10-15"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ielts-gifts-p1",
+      "format_id": "ielts-speaking",
+      "task": "part1",
+      "topic": "送礼",
+      "prompt": "Tell me about the last gift you chose for another person.",
+      "provenance": "adapted",
+      "source_ids": [
+        "vega-202610"
+      ]
+    },
+    {
+      "id": "ielts-weekend-p1",
+      "format_id": "ielts-speaking",
+      "task": "part1",
+      "topic": "周末",
+      "prompt": "How do you decide what to do when you have a free weekend?",
+      "provenance": "adapted",
+      "source_ids": [
+        "vega-202610"
+      ]
+    },
+    {
+      "id": "ielts-study-p1",
+      "format_id": "ielts-speaking",
+      "task": "part1",
+      "topic": "工作与学习",
+      "prompt": "Which part of your work or studies do you find most rewarding?",
+      "provenance": "adapted",
+      "source_ids": [
+        "joe-202609"
+      ]
+    },
+    {
+      "id": "ielts-waiting-card",
+      "format_id": "ielts-speaking",
+      "task": "part2",
+      "topic": "等待经历",
+      "prompt": "Talk about an occasion when something you wanted took longer than expected. Include what you were waiting for, how you spent the waiting time, and your reaction when it finally happened.",
+      "provenance": "adapted",
+      "source_ids": [
+        "vega-202610"
+      ],
+      "notes": "依据等待话题自制的完整练习卡，不声称原题措辞。"
+    },
+    {
+      "id": "ielts-athlete-card",
+      "format_id": "ielts-speaking",
+      "task": "part2",
+      "topic": "欣赏的运动员",
+      "prompt": "Tell a story about a sports competitor you respect. Mention how you learned about them, a challenge or achievement, and what you personally admire.",
+      "provenance": "adapted",
+      "source_ids": [
+        "joe-202609"
+      ]
+    },
+    {
+      "id": "ielts-patience-p3",
+      "format_id": "ielts-speaking",
+      "task": "part3",
+      "topic": "耐心与科技",
+      "prompt": "In what ways might instant services affect the patience people show in everyday life?",
+      "provenance": "adapted",
+      "source_ids": [
+        "vega-202610"
+      ]
+    },
+    {
+      "id": "ielts-sport-p3",
+      "format_id": "ielts-speaking",
+      "task": "part3",
+      "topic": "运动与教育",
+      "prompt": "What role should organised sport have in a school education, and why?",
+      "provenance": "adapted",
+      "source_ids": [
+        "joe-202609"
+      ]
+    },
+    {
+      "id": "pte-academic-read",
+      "format_id": "pte-academic-2025",
+      "task": "read_aloud",
+      "topic": "城市公共空间",
+      "prompt": "Community gardens offer city residents a place to grow food and meet their neighbours. By sharing tools and exchanging advice, participants can learn practical skills while making better use of small urban spaces.",
+      "provenance": "generated",
+      "source_ids": [
+        "pte-academic-format"
+      ]
+    },
+    {
+      "id": "pte-academic-repeat",
+      "format_id": "pte-academic-2025",
+      "task": "repeat_sentence",
+      "topic": "校园安排",
+      "prompt": "Listen to the sentence and repeat it after the recording.",
+      "provenance": "generated",
+      "source_ids": [
+        "pte-academic-format"
+      ],
+      "stimulus_text": "Students can collect their project materials from the library tomorrow.",
+      "notes": "需宿主从隐藏文本生成真实语音或提供音频；模考首答前不显示句子。"
+    },
+    {
+      "id": "pte-academic-situation",
+      "format_id": "pte-academic-2025",
+      "task": "respond_to_situation",
+      "topic": "课程小组安排",
+      "prompt": "Your study group wants to meet this evening, but you have already agreed to help at a campus event. Explain the conflict to your classmates and suggest a practical alternative.",
+      "provenance": "generated",
+      "source_ids": [
+        "pte-academic-format"
+      ],
+      "notes": "题目内容为原创；按正式流程还需听到情境描述音频。"
+    },
+    {
+      "id": "pte-academic-discussion",
+      "format_id": "pte-academic-2025",
+      "task": "summarize_group_discussion",
+      "topic": "校园交通",
+      "prompt": "Listen to a three-person discussion about travelling to campus and summarise the speakers’ main ideas.",
+      "provenance": "generated",
+      "source_ids": [
+        "pte-academic-format"
+      ],
+      "stimulus_text": "Speaker A prefers the bus because it is inexpensive. Speaker B cycles for exercise but finds rainy days difficult. Speaker C suggests a shared timetable so students can coordinate rides when buses are infrequent.",
+      "notes": "这是素材草案，尚无多人音频；不可直接称为完整听力模考。"
+    },
+    {
+      "id": "pte-core-situation",
+      "format_id": "pte-core-2026",
+      "task": "respond_to_situation",
+      "topic": "日常服务",
+      "prompt": "A repair shop has kept your bicycle longer than promised, and you need it for work. Explain your situation politely and ask what they can do to help.",
+      "provenance": "generated",
+      "source_ids": [
+        "pte-core-format"
+      ],
+      "notes": "原创情境；Core 与 Academic 准备时限不同，正式流程需要音频。"
+    },
+    {
+      "id": "toefl-repeat",
+      "format_id": "toefl-ibt-2026",
+      "task": "listen_repeat",
+      "topic": "校园活动",
+      "prompt": "Listen carefully, then repeat the sentence you hear.",
+      "provenance": "generated",
+      "source_ids": [
+        "toefl-format"
+      ],
+      "stimulus_text": "The science club meets in the main building every Thursday.",
+      "notes": "应播放语音而非把句子作为考生阅读材料。"
+    },
+    {
+      "id": "toefl-interview-one",
+      "format_id": "toefl-ibt-2026",
+      "task": "interview",
+      "topic": "学习环境",
+      "prompt": "Describe a place where you work or study effectively. What makes it suitable for you?",
+      "provenance": "generated",
+      "source_ids": [
+        "toefl-format"
+      ]
+    },
+    {
+      "id": "toefl-interview-two",
+      "format_id": "toefl-ibt-2026",
+      "task": "interview",
+      "topic": "学习环境",
+      "prompt": "Some learners prefer working with background noise. How does your own experience compare with that preference?",
+      "provenance": "generated",
+      "source_ids": [
+        "toefl-format"
+      ]
+    },
+    {
+      "id": "ielts-reported-study-tech",
+      "format_id": "ielts-speaking",
+      "task": "part1",
+      "topic": "学习中的科技",
+      "prompt": "What technology do you use when you study?",
+      "provenance": "reported",
+      "source_ids": [
+        "joe-202609"
+      ],
+      "notes": "第三方汇编中实际可见的题目，无单题考试日期；不是官方在用题确认。"
+    },
+    {
+      "id": "ielts-reported-gifts",
+      "format_id": "ielts-speaking",
+      "task": "part1",
+      "topic": "送礼",
+      "prompt": "Do you like giving gifts?",
+      "provenance": "reported",
+      "source_ids": [
+        "vega-202610"
+      ],
+      "notes": "第三方公开话题汇编实际列出的短题；没有单题考试日期，不保证命中。"
+    }
+  ],
+  "search_log": [
+    {
+      "checked_on": "2026-10-15",
+      "query": "IELTS speaking September December 2026 recent questions October 2026",
+      "opened": [
+        "vega-202610",
+        "joe-202609"
+      ]
+    },
+    {
+      "checked_on": "2026-10-15",
+      "query": "site.pearsonpte.com PTE Academic speaking writing summarize group discussion respond to a situation 2025 test format",
+      "opened": [
+        "pte-academic-format",
+        "pte-core-format"
+      ]
+    },
+    {
+      "checked_on": "2026-10-15",
+      "query": "site.ets.org TOEFL iBT speaking January 2026 Listen and Repeat Take an Interview test content",
+      "opened": [
+        "toefl-format"
+      ]
+    }
+  ]
+}

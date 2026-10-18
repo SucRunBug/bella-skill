@@ -1,0 +1,4 @@
+interface:
+  display_name: "bella-audio-listening"
+  short_description: "英语听力与双语听读：内嵌原声的离线双语听读 HTML"
+  default_prompt: "使用 $bella-audio-listening，根据已有材料完成当前请求。"

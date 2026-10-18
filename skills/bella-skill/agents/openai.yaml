@@ -1,0 +1,4 @@
+interface:
+  display_name: "bella-skill"
+  short_description: "Bella 主入口，根据当前材料连接英语、科研、自媒体和 3D 游戏技能"
+  default_prompt: "使用 $bella-skill，根据我的目标和已有材料选择合适的技能，并继续完成当前任务。"
