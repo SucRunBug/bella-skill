@@ -64,6 +64,22 @@
       "commit": "22d3c3cd9b0f150901f0b78f0710d51a957a6b5a"
     },
     {
+      "name": "bella-music-mv",
+      "title": "程序化二维动画音乐 MV",
+      "category": "media",
+      "category_label": "自媒体",
+      "path": "media/bella-music-mv",
+      "aliases": [],
+      "handoff": "已有音乐与歌词 → 分镜、可编辑的程序化二维角色动画工程、检查材料与 MP4 成片",
+      "excludes": "作曲或生成歌曲；把歌词滚动页、口播包装、拼贴制作包或未渲染工程冒充 MV 成片",
+      "dependencies": [
+        "Node.js、Chrome/Chromium、ffmpeg/ffprobe、Python 3.10+；歌词精确对齐后端按需配置"
+      ],
+      "source": "https://github.com/SucRunBug/bella-skill",
+      "commit": "0d20239c0da9c19b483f270ab64109113ea72250",
+      "source_note": "本仓库新编实现的集成基线；第三方固定版本与保留文件见 media/bella-music-mv/references/provenance.md"
+    },
+    {
       "name": "talking-head-video-packaging",
       "title": "口播视频剪辑与包装",
       "category": "media",

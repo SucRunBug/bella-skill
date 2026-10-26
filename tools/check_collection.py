@@ -44,7 +44,10 @@ def main() -> int:
         ui = definition.parent / "agents/openai.yaml"
         if not ui.is_file() or "$" + data["name"] not in ui.read_text(encoding="utf-8"):
             errors.append(f"Missing/inconsistent UI metadata: {definition.parent}")
-    text_suffixes = {".md", ".py", ".json", ".yaml", ".yml", ".sh", ".txt", ".html"}
+    text_suffixes = {
+        ".md", ".py", ".json", ".yaml", ".yml", ".sh", ".txt", ".html",
+        ".js", ".mjs", ".cjs", ".css", ".svg", ".toml", ".lrc", ".srt", ".vtt",
+    }
     for path in ROOT.rglob("*"):
         rel = path.relative_to(ROOT)
         if any(p in {".git", "__pycache__", ".venv", "node_modules"} for p in rel.parts):
