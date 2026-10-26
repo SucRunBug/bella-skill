@@ -1,0 +1,8 @@
+{
+  "name": "bella-product-promo-project",
+  "private": true,
+  "type": "module",
+  "engines": {"node": ">=20"},
+  "scripts": {"render": "node render.mjs --project . --output output.mp4"},
+  "dependencies": {"playwright": "1.64.1"}
+}

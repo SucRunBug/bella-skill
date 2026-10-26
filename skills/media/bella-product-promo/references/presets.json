@@ -1,0 +1,760 @@
+{
+  "schema_version": 1,
+  "styles": [
+    {
+      "id": "spotify-premium",
+      "title": "高级音乐产品片",
+      "description": "深色舞台、专辑封面连续复用、克制品牌色与音乐播放器贯穿。",
+      "best_for": [
+        "音乐/内容产品",
+        "视觉内容浏览与发现"
+      ],
+      "reference_slugs": [
+        "brainextends-606193",
+        "twoclipping-762046"
+      ],
+      "suggested_tech": [
+        "native-html",
+        "gsap",
+        "remotion"
+      ],
+      "needs": [
+        "当前品牌与事实",
+        "可用封面或原创视觉",
+        "音乐授权与节奏"
+      ],
+      "notes": [
+        "Spotify与Claude等原例身份需要按当前产品替换。"
+      ]
+    },
+    {
+      "id": "minimal-ui",
+      "title": "极简 UI 变形",
+      "description": "暖灰或米白底、黑白组件、一种强调色、光标驱动的连续形态转换。",
+      "best_for": [
+        "SaaS交互演示",
+        "短循环产品动效"
+      ],
+      "reference_slugs": [
+        "annacher-433425",
+        "0xnicc0-516612"
+      ],
+      "suggested_tech": [
+        "native-html",
+        "gsap"
+      ],
+      "needs": [
+        "UI状态列表",
+        "品牌强调色",
+        "音效或配乐策略"
+      ],
+      "notes": [
+        "原例的微过冲与禁用特效是可选美术方向。"
+      ]
+    },
+    {
+      "id": "tech-launch",
+      "title": "技术产品发布",
+      "description": "用数据流、分支、代码与真实功能机制串起精确的发布叙事。",
+      "best_for": [
+        "开发者工具",
+        "AI API与技术平台"
+      ],
+      "reference_slugs": [
+        "howdevelop-733090"
+      ],
+      "suggested_tech": [
+        "remotion",
+        "native-html",
+        "gsap",
+        "threejs"
+      ],
+      "needs": [
+        "已验证的产品能力",
+        "发布阶段与措辞",
+        "简洁且可读的技术画面"
+      ],
+      "notes": [
+        "不继承原例的RC状态或provider数量作为当前事实。"
+      ]
+    },
+    {
+      "id": "real-ui",
+      "title": "真实界面与组件拆解",
+      "description": "从真实产品流程提取界面，拆解为能单独运动的文字、图标与组件。",
+      "best_for": [
+        "已有可访问产品",
+        "功能证明与真实操作"
+      ],
+      "reference_slugs": [
+        "annacher-433425",
+        "ho-ba-761062",
+        "jhylee95-452427",
+        "techtactician-144474"
+      ],
+      "suggested_tech": [
+        "native-html",
+        "gsap",
+        "remotion",
+        "hybrid"
+      ],
+      "needs": [
+        "实际产品界面与访问范围",
+        "品牌素材",
+        "经确认的功能路径"
+      ],
+      "notes": [
+        "无法访问时请求必要素材或缩小范围，不编造UI与能力。"
+      ]
+    },
+    {
+      "id": "social-launch",
+      "title": "社交媒体发布",
+      "description": "首秒钩子、紧凑功能证明、节拍驱动的场景变化与清楚结尾。",
+      "best_for": [
+        "SaaS新品",
+        "社媒短视频"
+      ],
+      "reference_slugs": [
+        "ho-ba-761062",
+        "jhylee95-452427",
+        "moritzkremb-466494",
+        "techtactician-144474"
+      ],
+      "suggested_tech": [
+        "remotion",
+        "gsap",
+        "native-html",
+        "hybrid"
+      ],
+      "needs": [
+        "目标受众与平台",
+        "一句承诺",
+        "真实素材与CTA"
+      ],
+      "notes": [
+        "没有规定技术或时长的原例由当前brief决定，不从重做标签倒推。"
+      ]
+    },
+    {
+      "id": "apple-continuous",
+      "title": "连续镜头与液态玻璃",
+      "description": "对象在同一镜头内变形、共享运动轨迹，照片与玻璃界面衔接。",
+      "best_for": [
+        "消费软件",
+        "高完成度品牌演示"
+      ],
+      "reference_slugs": [
+        "twoclipping-496100",
+        "twoclipping-747965",
+        "twoclipping-762046"
+      ],
+      "suggested_tech": [
+        "native-html",
+        "gsap",
+        "remotion"
+      ],
+      "needs": [
+        "当前产品故事",
+        "照片或封面",
+        "节奏与视窗尺寸"
+      ],
+      "notes": [
+        "这些原例为2D，Apple风格或上游3d分类都不强制采用3D引擎。"
+      ]
+    },
+    {
+      "id": "footage-hybrid",
+      "title": "真实影像混合",
+      "description": "把真实照片/视频、产品UI与动态图形连成可验证的产品故事。",
+      "best_for": [
+        "视频或创作工具",
+        "实物与数字流程结合"
+      ],
+      "reference_slugs": [
+        "twoclipping-496100",
+        "twoclipping-000267"
+      ],
+      "suggested_tech": [
+        "hybrid",
+        "native-html",
+        "remotion",
+        "gsap"
+      ],
+      "needs": [
+        "有使用权的真实素材",
+        "UI与结果画面",
+        "编码与逐帧seek方案"
+      ],
+      "notes": [
+        "hybrid描述真实影像与代码动效的组合，不自动授权下载素材或调用外部服务。"
+      ]
+    },
+    {
+      "id": "outcome-story",
+      "title": "交办任务到结果",
+      "description": "把输入、处理中、时间经过和可核实结果串为单条叙事。",
+      "best_for": [
+        "自动化工具",
+        "异步代理产品"
+      ],
+      "reference_slugs": [
+        "twoclipping-747965"
+      ],
+      "suggested_tech": [
+        "native-html",
+        "gsap",
+        "remotion"
+      ],
+      "needs": [
+        "一项用户任务",
+        "三项已验证结果或明确示例",
+        "昼夜视觉与音乐"
+      ],
+      "notes": [
+        "沿用叙事结构，不沿用原例销售指标作为真实业绩。"
+      ]
+    },
+    {
+      "id": "shape-morph",
+      "title": "单形态连续变形",
+      "description": "同一形状贯穿提示条、按钮、进度、预览与提示消息，重视循环首尾。",
+      "best_for": [
+        "AI生成流程",
+        "一镜到底UI小片"
+      ],
+      "reference_slugs": [
+        "annacher-433425",
+        "twoclipping-747965",
+        "0xnicc0-516612",
+        "twoclipping-762046"
+      ],
+      "suggested_tech": [
+        "native-html",
+        "gsap",
+        "remotion"
+      ],
+      "needs": [
+        "状态顺序",
+        "主形状与强调色",
+        "节拍与循环目标"
+      ],
+      "notes": [
+        "一形多态是可选构图策略，不覆盖当前用户已选的转场或流程。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "slug": "brainextends-606193",
+      "title": "Spotify 高级音乐产品片",
+      "file": "original-prompts/brainextends-606193.md",
+      "post_url": "https://x.com/brainextends/status/2103801834930606193",
+      "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/brainextends-606193",
+      "sha256": "68bce1759b2b9838f1ddc72a5e76320d13adecf735acff9bf5ecb2a70863ae7d",
+      "author": "brainextends",
+      "source_kind": "specific_task",
+      "prompt_partial": false,
+      "has_remake": true,
+      "original_category": "motion",
+      "remake_tech_tags": [
+        "shader",
+        "svg"
+      ],
+      "original_tech_requirements": [
+        "native-html"
+      ],
+      "original_duration": {
+        "kind": "exact",
+        "seconds": 18,
+        "detail": "原提示词要求 18 秒、1920×1080、60fps；不是对原视频或重做成片的测量。"
+      },
+      "inputs": [],
+      "asset_dependencies": [
+        "自行制作虚构专辑封面与歌单封面",
+        "可商用约120 BPM音乐及轻音效",
+        "Geist 或 Inter 字体"
+      ],
+      "notes": [
+        "明确自含：不需要参考视频或用户提供素材。",
+        "Spotify 品牌、文案与虚构曲目属于本例；用于当前产品时应按已确认的品牌和事实替换。"
+      ],
+      "style_ids": [
+        "spotify-premium"
+      ],
+      "upstream_commit": "92aee2f586ac0715cb3cbcb6384834f98a33383d",
+      "upstream_url": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/92aee2f586ac0715cb3cbcb6384834f98a33383d/prompts/brainextends-606193.md"
+    },
+    {
+      "slug": "annacher-433425",
+      "title": "Sprites 真实 UI 连续变形",
+      "file": "original-prompts/annacher-433425.md",
+      "post_url": "https://x.com/AnnaCher___/status/2103571096549433425",
+      "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/annacher-433425",
+      "sha256": "5b71ca519a48f8da539f734ad2948640b77f6ba4311dcde8ccb227ceb14bf475",
+      "author": "AnnaCher___",
+      "source_kind": "specific_task",
+      "prompt_partial": false,
+      "has_remake": true,
+      "original_category": "motion",
+      "remake_tech_tags": [
+        "svg"
+      ],
+      "original_tech_requirements": [
+        "native-html"
+      ],
+      "original_duration": {
+        "kind": "beat_derived",
+        "seconds": 14,
+        "detail": "120 BPM、7小节，按每小节4拍推算约14秒；原文未明说节拍型，不是成片实测。"
+      },
+      "inputs": [
+        "当前产品与获准访问的真实UI"
+      ],
+      "asset_dependencies": [
+        "sprites.ai 实际产品界面、广告平台标志、真实广告内容",
+        "Geist 字体",
+        "numpy 合成 UI 音效"
+      ],
+      "notes": [
+        "原文无音乐，仅合成UI音效；不得因其他模板使用配乐而覆盖。",
+        "需要访问真实产品并核实功能，原文中的示例指标和广告内容不能自动当作当前产品事实。"
+      ],
+      "style_ids": [
+        "minimal-ui",
+        "real-ui",
+        "shape-morph"
+      ],
+      "upstream_commit": "92aee2f586ac0715cb3cbcb6384834f98a33383d",
+      "upstream_url": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/92aee2f586ac0715cb3cbcb6384834f98a33383d/prompts/annacher-433425.md"
+    },
+    {
+      "slug": "howdevelop-733090",
+      "title": "TanStack AI 技术发布片",
+      "file": "original-prompts/howdevelop-733090.md",
+      "post_url": "https://x.com/HowDevelop/status/2103840883812733090",
+      "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/howdevelop-733090",
+      "sha256": "3ca30e013d3808ca973526192fa018d1ccb46fbbd8b980d8bf0bd01264090be3",
+      "author": "HowDevelop",
+      "source_kind": "specific_task",
+      "prompt_partial": false,
+      "has_remake": true,
+      "original_category": "motion",
+      "remake_tech_tags": [
+        "canvas"
+      ],
+      "original_tech_requirements": [
+        "remotion",
+        "native-html"
+      ],
+      "original_duration": {
+        "kind": "exact",
+        "seconds": 15,
+        "detail": "原提示词要求恰好15秒、1920×1080、30fps；不是成片实测。"
+      },
+      "inputs": [
+        "适用于当前任务且已核实的产品事实"
+      ],
+      "asset_dependencies": [
+        "原文提供TanStack AI事实摘录；提到的 supplied article 未附全文",
+        "原创电子音乐与音效"
+      ],
+      "notes": [
+        "Remotion 或其他代码动效流程均可，原文没有锁定 Remotion。",
+        "原文含重复音效条目，副本保持原样。",
+        "RC、24家provider等为原例快照，迁移到当前任务前需核实，不可宣称为现状。"
+      ],
+      "style_ids": [
+        "tech-launch"
+      ],
+      "upstream_commit": "92aee2f586ac0715cb3cbcb6384834f98a33383d",
+      "upstream_url": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/92aee2f586ac0715cb3cbcb6384834f98a33383d/prompts/howdevelop-733090.md"
+    },
+    {
+      "slug": "ho-ba-761062",
+      "title": "真实产品组件拆解宣传片",
+      "file": "original-prompts/ho-ba-761062.md",
+      "post_url": "https://x.com/HO_BA/status/2103845264649761062",
+      "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/ho-ba-761062",
+      "sha256": "65201304be23dfc46d996ad61b1ee378e4ce204824a60699b2cc670be09ef03b",
+      "author": "HO_BA",
+      "source_kind": "specific_task",
+      "prompt_partial": false,
+      "has_remake": true,
+      "original_category": "motion",
+      "remake_tech_tags": [
+        "canvas"
+      ],
+      "original_tech_requirements": [],
+      "original_duration": {
+        "kind": "exact",
+        "seconds": 30,
+        "detail": "原提示词要求30秒；不是成片实测。"
+      },
+      "inputs": [
+        "当前产品URL与可用品牌素材"
+      ],
+      "asset_dependencies": [
+        "mdfor.dev 实际截图、logo、产品素材",
+        "音乐"
+      ],
+      "notes": [
+        "原URL在MD中跨行写成 https:// 与 mdfor.dev，原样保留。",
+        "要求将截图拆成可动画组件；不等于已附源UI或素材。",
+        "没有指定实现技术。"
+      ],
+      "style_ids": [
+        "real-ui",
+        "social-launch"
+      ],
+      "upstream_commit": "92aee2f586ac0715cb3cbcb6384834f98a33383d",
+      "upstream_url": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/92aee2f586ac0715cb3cbcb6384834f98a33383d/prompts/ho-ba-761062.md"
+    },
+    {
+      "slug": "jhylee95-452427",
+      "title": "Supademo 快节奏社交发布片",
+      "file": "original-prompts/jhylee95-452427.md",
+      "post_url": "https://x.com/jhylee95/status/2103604431627452427",
+      "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/jhylee95-452427",
+      "sha256": "85a03a501e6c2cf729906c72ceca4895de92c07a4c035ed9f54c7511a4206277",
+      "author": "jhylee95",
+      "source_kind": "specific_task",
+      "prompt_partial": false,
+      "has_remake": true,
+      "original_category": "motion",
+      "remake_tech_tags": [
+        "svg",
+        "gsap"
+      ],
+      "original_tech_requirements": [],
+      "original_duration": {
+        "kind": "unspecified",
+        "seconds": null,
+        "detail": "原提示词未给总时长，只要求首秒hook和跟随节拍/落点。"
+      },
+      "inputs": [
+        "已核实的当前产品价值与品牌规范"
+      ],
+      "asset_dependencies": [
+        "Supademo 产品研究、准确UI、字体与配色",
+        "配乐与节拍分析"
+      ],
+      "notes": [
+        "数据标记 prompt_partial=false；实际文本较短，末尾为 Social energy, quick cuts，未附详细分镜或指标。",
+        "不可把简短brief当作完整生产对话；技术和时长仍需当前任务决定。"
+      ],
+      "style_ids": [
+        "social-launch",
+        "real-ui"
+      ],
+      "upstream_commit": "92aee2f586ac0715cb3cbcb6384834f98a33383d",
+      "upstream_url": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/92aee2f586ac0715cb3cbcb6384834f98a33383d/prompts/jhylee95-452427.md"
+    },
+    {
+      "slug": "twoclipping-496100",
+      "title": "Apple 连续镜头与液态玻璃",
+      "file": "original-prompts/twoclipping-496100.md",
+      "post_url": "https://x.com/twoclipping/status/2103835273813496100",
+      "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/twoclipping-496100",
+      "sha256": "ecb8efb69c7c27dae518790937d665cc15b4d904fd1337433db76289c889a4aa",
+      "author": "twoclipping",
+      "source_kind": "input_template",
+      "prompt_partial": false,
+      "has_remake": true,
+      "original_category": "3d",
+      "remake_tech_tags": [
+        "canvas"
+      ],
+      "original_tech_requirements": [
+        "native-html"
+      ],
+      "original_duration": {
+        "kind": "beat_derived",
+        "seconds": 27,
+        "detail": "120 BPM、54拍推算27秒；不是成片实测。"
+      },
+      "inputs": [
+        "单词品牌名",
+        "9–12张高清照片",
+        "约120 BPM且有drop与安静breakdown的音乐",
+        "带移动植物影子的真实墙面视频"
+      ],
+      "asset_dependencies": [
+        "用户照片，含白天/金色时刻对齐照片",
+        "有许可的真实墙面素材（原文举Pexels）",
+        "下载音效（原文举Mixkit，原例禁止合成）",
+        "Archivo与Geist字体"
+      ],
+      "notes": [
+        "原例明确2D only，尽管上游分类为3d。",
+        "原例的下载SFX、禁用合成、1440方形等约束仅是可选参考，采用前检查当前用户要求。"
+      ],
+      "style_ids": [
+        "apple-continuous",
+        "footage-hybrid"
+      ],
+      "upstream_commit": "92aee2f586ac0715cb3cbcb6384834f98a33383d",
+      "upstream_url": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/92aee2f586ac0715cb3cbcb6384834f98a33383d/prompts/twoclipping-496100.md"
+    },
+    {
+      "slug": "twoclipping-000267",
+      "title": "真实视频墙与结果展示",
+      "file": "original-prompts/twoclipping-000267.md",
+      "post_url": "https://x.com/twoclipping/status/2102554209166000267",
+      "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/twoclipping-000267",
+      "sha256": "0600067aed88a2a398418036336956fcaa924bfaa7b6a60e8bb5f550f0f1af2d",
+      "author": "twoclipping",
+      "source_kind": "input_template",
+      "prompt_partial": false,
+      "has_remake": true,
+      "original_category": "3d",
+      "remake_tech_tags": [
+        "svg",
+        "css"
+      ],
+      "original_tech_requirements": [
+        "native-html"
+      ],
+      "original_duration": {
+        "kind": "beat_derived",
+        "seconds": 20,
+        "detail": "10小节、每小节2秒，推算20秒；不是成片实测。"
+      },
+      "inputs": [
+        "产品名与一句承诺",
+        "3–5个UI时刻",
+        "强调色",
+        "10–20段拥有使用权的竖屏视频",
+        "有明显drop的免版税歌曲"
+      ],
+      "asset_dependencies": [
+        "真实竖屏视频，不能用占位卡片替代",
+        "适合商用的音乐与音效",
+        "Geist或Inter字体"
+      ],
+      "notes": [
+        "原例提及3D carousel，但以HTML与真实视频序列实现，不自动要求Three.js。",
+        "原MD中 http:// 与 window.seek(t) 的跨行文本原样保留，不将它当作可执行URL或代码。"
+      ],
+      "style_ids": [
+        "footage-hybrid"
+      ],
+      "upstream_commit": "92aee2f586ac0715cb3cbcb6384834f98a33383d",
+      "upstream_url": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/92aee2f586ac0715cb3cbcb6384834f98a33383d/prompts/twoclipping-000267.md"
+    },
+    {
+      "slug": "moritzkremb-466494",
+      "title": "开放选题 SaaS 社交发布片",
+      "file": "original-prompts/moritzkremb-466494.md",
+      "post_url": "https://x.com/moritzkremb/status/2103066071838466494",
+      "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/moritzkremb-466494",
+      "sha256": "0d49d231a3ce23e2ad3ce4196123f7c0c619cff0194f26e5b91b497e62ab54f3",
+      "author": "moritzkremb",
+      "source_kind": "open_brief",
+      "prompt_partial": false,
+      "has_remake": true,
+      "original_category": "motion",
+      "remake_tech_tags": [
+        "svg",
+        "gsap"
+      ],
+      "original_tech_requirements": [],
+      "original_duration": {
+        "kind": "unspecified",
+        "seconds": null,
+        "detail": "原提示词未规定时长。"
+      },
+      "inputs": [
+        "当前用户指定产品优先",
+        "真实产品素材与功能事实"
+      ],
+      "asset_dependencies": [
+        "原例要求上网选择熟悉的SaaS并获取实际素材"
+      ],
+      "notes": [
+        "开放选题并非必需步骤：用户已指定产品时不得重新挑选。",
+        "原例没有分镜、技术或时长要求，使用时须补当前产品brief。"
+      ],
+      "style_ids": [
+        "social-launch"
+      ],
+      "upstream_commit": "92aee2f586ac0715cb3cbcb6384834f98a33383d",
+      "upstream_url": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/92aee2f586ac0715cb3cbcb6384834f98a33383d/prompts/moritzkremb-466494.md"
+    },
+    {
+      "slug": "techtactician-144474",
+      "title": "Slideforge SaaS 发布片",
+      "file": "original-prompts/techtactician-144474.md",
+      "post_url": "https://x.com/techtactician/status/2103219463508144474",
+      "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/techtactician-144474",
+      "sha256": "86994185c472363ebb88e2ef85000110efae76eb61333ebc6ffc7ca8b281bf16",
+      "author": "techtactician",
+      "source_kind": "specific_task",
+      "prompt_partial": false,
+      "has_remake": true,
+      "original_category": "motion",
+      "remake_tech_tags": [
+        "svg",
+        "gsap",
+        "css"
+      ],
+      "original_tech_requirements": [],
+      "original_duration": {
+        "kind": "unspecified",
+        "seconds": null,
+        "detail": "原提示词未规定时长。"
+      },
+      "inputs": [
+        "当前目标产品与其获准使用的素材"
+      ],
+      "asset_dependencies": [
+        "slideforge.io 产品详情、实际图像与素材"
+      ],
+      "notes": [
+        "Slideforge 为原例对象，不是默认替换用户产品的授权。",
+        "原文没有固定技术或时长；上游GSAP标签只描述重做版。"
+      ],
+      "style_ids": [
+        "social-launch",
+        "real-ui"
+      ],
+      "upstream_commit": "92aee2f586ac0715cb3cbcb6384834f98a33383d",
+      "upstream_url": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/92aee2f586ac0715cb3cbcb6384834f98a33383d/prompts/techtactician-144474.md"
+    },
+    {
+      "slug": "twoclipping-747965",
+      "title": "Nightshift 夜间工作到早晨结果",
+      "file": "original-prompts/twoclipping-747965.md",
+      "post_url": "https://x.com/twoclipping/status/2105927781678747965",
+      "skillry_url": null,
+      "sha256": "205f3c0bff72b24f0bb429da97da27113b7ad681e43d66e6c02e7c7733f4815e",
+      "author": "twoclipping",
+      "source_kind": "input_template",
+      "prompt_partial": false,
+      "has_remake": false,
+      "original_category": "motion",
+      "remake_tech_tags": [],
+      "original_tech_requirements": [
+        "native-html"
+      ],
+      "original_duration": {
+        "kind": "exact",
+        "seconds": 24,
+        "detail": "原提示词要求24秒、1440×1440、60fps；不是成片实测。"
+      },
+      "inputs": [
+        "产品小写单词名",
+        "睡前交办的一项工作",
+        "清晨展示的三项结果",
+        "同机位夜景与日景照片",
+        "外部白昼照片",
+        "开头有强击的歌曲"
+      ],
+      "asset_dependencies": [
+        "对齐的昼夜照片；原文禁止代码生成的纯色或渐变背景替代",
+        "外部白昼照片",
+        "下载音效与歌曲",
+        "Geist字体与macOS指针"
+      ],
+      "notes": [
+        "原文允许跳过输入使用默认值，但并未附照片/音轨文件。",
+        "200 leads、200 emails、10 calls、$48,200 为例子，不可当作用户产品业绩。",
+        "原文2D only；没有逐帧重做视频记录。"
+      ],
+      "style_ids": [
+        "outcome-story",
+        "apple-continuous",
+        "shape-morph"
+      ],
+      "upstream_commit": "92aee2f586ac0715cb3cbcb6384834f98a33383d",
+      "upstream_url": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/92aee2f586ac0715cb3cbcb6384834f98a33383d/prompts/twoclipping-747965.md"
+    },
+    {
+      "slug": "0xnicc0-516612",
+      "title": "提示条到成片的单形态循环",
+      "file": "original-prompts/0xnicc0-516612.md",
+      "post_url": "https://x.com/0xnicc0/status/2107217691505516612",
+      "skillry_url": null,
+      "sha256": "9f3f269032749021fa71b8cf895197db40bf6e7f5669edb5d21fddb5384df9d0",
+      "author": "0xnicc0",
+      "source_kind": "input_template",
+      "prompt_partial": false,
+      "has_remake": false,
+      "original_category": "motion",
+      "remake_tech_tags": [],
+      "original_tech_requirements": [
+        "native-html"
+      ],
+      "original_duration": {
+        "kind": "beat_derived",
+        "seconds": 12,
+        "detail": "120 BPM、24拍推算12秒；不是成片实测。"
+      },
+      "inputs": [
+        "单词产品名",
+        "强调色",
+        "约120 BPM的免版税音轨"
+      ],
+      "asset_dependencies": [
+        "有许可的音乐与点击/弹出/提示音",
+        "Inter字体"
+      ],
+      "notes": [
+        "强调一形多态和首尾一致；示例内容是代码渲染流程，迁移到其他产品需调整叙事。",
+        "原文未给照片或外部UI附件依赖。"
+      ],
+      "style_ids": [
+        "shape-morph",
+        "minimal-ui"
+      ],
+      "upstream_commit": "92aee2f586ac0715cb3cbcb6384834f98a33383d",
+      "upstream_url": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/92aee2f586ac0715cb3cbcb6384834f98a33383d/prompts/0xnicc0-516612.md"
+    },
+    {
+      "slug": "twoclipping-762046",
+      "title": "音乐播放 UI 连续变形模板",
+      "file": "original-prompts/twoclipping-762046.md",
+      "post_url": "https://x.com/twoclipping/status/2104674464868762046",
+      "skillry_url": null,
+      "sha256": "8e69e140f902b70b63f8e85b09c89e37d5971aa8313df3f21f4fa86065ef80f6",
+      "author": "twoclipping",
+      "source_kind": "input_template",
+      "prompt_partial": false,
+      "has_remake": false,
+      "original_category": "3d",
+      "remake_tech_tags": [],
+      "original_tech_requirements": [
+        "native-html"
+      ],
+      "original_duration": {
+        "kind": "exact",
+        "seconds": 22,
+        "detail": "原提示词要求22秒、1440×1440、60fps；不是成片实测。"
+      },
+      "inputs": [
+        "用户问题与一句回答",
+        "两张专辑封面",
+        "约110 BPM且有安静intro和hard drop的免版税音乐",
+        "结尾logo"
+      ],
+      "asset_dependencies": [
+        "专辑封面或默认氛围照片",
+        "有许可的歌曲，原文举Mixkit Head Bang但未附音轨",
+        "logo或原文Claude spark默认示例",
+        "Geist字体与macOS指针"
+      ],
+      "notes": [
+        "原例明确2D only，尽管上游分类为3d。",
+        "这是含默认值的视觉结构模板，未附外部素材文件，默认曲目与图像仍须获取并确认可用。",
+        "原文只含inputs/direction/structure，没有完整build步骤，不能补写为原文。"
+      ],
+      "style_ids": [
+        "apple-continuous",
+        "shape-morph",
+        "spotify-premium"
+      ],
+      "upstream_commit": "92aee2f586ac0715cb3cbcb6384834f98a33383d",
+      "upstream_url": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/92aee2f586ac0715cb3cbcb6384834f98a33383d/prompts/twoclipping-762046.md"
+    }
+  ]
+}

@@ -80,6 +80,22 @@
       "source_note": "本仓库新编实现的集成基线；第三方固定版本与保留文件见 media/bella-music-mv/references/provenance.md"
     },
     {
+      "name": "bella-product-promo",
+      "title": "产品宣传片与发布片",
+      "category": "media",
+      "category_label": "自媒体",
+      "path": "media/bella-product-promo",
+      "aliases": [],
+      "handoff": "已有产品网址、功能资料、品牌素材或产品视频工程 → 风格与技术选型、分镜、可编辑宣传片工程、实际检查与 MP4 成片；也可只交付提示词或方案",
+      "excludes": "歌曲与歌词驱动的 MV；普通口播精剪；只拆解视频；将初始化脚手架或未渲染工程冒充产品宣传片",
+      "dependencies": [
+        "Python 3.10+；浏览器路线需要 Node.js 20+、Chrome/Chromium、ffmpeg/ffprobe；GSAP、Remotion、Three.js、Blender 按所选技术准备"
+      ],
+      "source": "https://github.com/SucRunBug/bella-skill",
+      "commit": "e02787468dfabc382e248f1ba2e6c350e73e3c40",
+      "source_note": "本仓库新编实现的集成基线；12 份完整原始提示词固定版本、逐文件哈希与 MIT 许可见 media/bella-product-promo/references/provenance.md"
+    },
+    {
       "name": "talking-head-video-packaging",
       "title": "口播视频剪辑与包装",
       "category": "media",

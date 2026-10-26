@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bella 产品宣传片"
+  short_description: "从产品资料到宣传片，支持多种风格、技术路线、新手引导及可编辑成片交付"
+  default_prompt: "使用 $bella-product-promo，根据我的产品资料推荐合适风格和技术，完成分镜、制作、检查并交付产品宣传片。"

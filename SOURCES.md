@@ -11,6 +11,7 @@
 | `skills/research/bella-ai4s/` | [bella-AI4S](https://github.com/SucRunBug/bella-AI4S) | [`1d5e23106f03`](https://github.com/SucRunBug/bella-AI4S/commit/1d5e23106f03c2747b60a183e48f67c66ba1c8ac) |
 | `skills/media/bella-ai-collage-maker/` | [bella-ai-collage-maker](https://github.com/SucRunBug/bella-ai-collage-maker) | [`22d3c3cd9b0f`](https://github.com/SucRunBug/bella-ai-collage-maker/commit/22d3c3cd9b0f150901f0b78f0710d51a957a6b5a) |
 | `skills/media/bella-music-mv/` | 本仓库新编技能；嵌入 MIT 授权的 [ClaudeAnimationBase](https://github.com/JohnHeibel/ClaudeAnimationBase) 动画运行时 | 见下方新增记录与 [完整来源](skills/media/bella-music-mv/references/provenance.md) |
+| `skills/media/bella-product-promo/` | 本仓库新编产品宣传片工作流、用户引导与渲染起点；保留 [awesome-opus5-5-videos](https://github.com/yihui-dev/awesome-opus5-5-videos) 中 12 份产品提示词 | 原文固定为 `92aee2f586ac0715cb3cbcb6384834f98a33383d`；见 [来源与逐文件哈希](skills/media/bella-product-promo/references/provenance.md) |
 | `skills/media/talking-head-video-packaging/` | [talking-head-video-packaging](https://github.com/SucRunBug/talking-head-video-packaging) | [`2a7e5e513ce1`](https://github.com/SucRunBug/talking-head-video-packaging/commit/2a7e5e513ce11220d0789e560ea9b9600b88a4d7) |
 | `skills/media/bella-writer/` | [bella-writer](https://github.com/SucRunBug/bella-writer) | [`f11458a0256f`](https://github.com/SucRunBug/bella-writer/commit/f11458a0256fb4fdf34c9780a60a964b66010161) |
 | `skills/media/yanmai-video-reading/` | [yanmai-video-reading](https://github.com/SucRunBug/yanmai-video-reading) | [`9e441e71481e`](https://github.com/SucRunBug/yanmai-video-reading/commit/9e441e71481ecf311f88d1458b5720b2b2b4ff95) |
@@ -23,6 +24,14 @@
 - 动画运行时与完整动画指南取自 ClaudeAnimationBase 的固定提交 [`0ac8bf2b31942376cb6b8c4074715595d512acd2`](https://github.com/JohnHeibel/ClaudeAnimationBase/commit/0ac8bf2b31942376cb6b8c4074715595d512acd2)，保留 MIT 许可证和署名，适配内容见技能内来源说明。
 - 制作流程参考 PDoomVideo 的固定提交 [`fa546a38092e75f2b079e6a86d6abc54dd525d17`](https://github.com/JohnHeibel/PDoomVideo/commit/fa546a38092e75f2b079e6a86d6abc54dd525d17)：歌词与节奏分析、分镜、分章节代码、独立时间采样、浏览器逐帧渲染、ffmpeg 合成和视觉检查。没有复制其歌曲、源码或原分镜。
 - 详细版权、文件保留范围及第三方版本见 [provenance.md](skills/media/bella-music-mv/references/provenance.md)。新技能本身不附带用户音乐或演示成片。
+
+## 产品宣传片新增记录（2026-10-26）
+
+`bella-product-promo` 新增在 `skills/media/`，保持可独立安装，并接入主入口目录。用户引导、9 种风格选择、6 条技术路线、制作流程、项目工具与浏览器渲染起点为本仓库新编；浏览器依赖按其自己的许可证安装。目录中的实现基线为 [`e02787468dfabc382e248f1ba2e6c350e73e3c40`](https://github.com/SucRunBug/bella-skill/commit/e02787468dfabc382e248f1ba2e6c350e73e3c40)，不表示该提交已经包含本技能。
+
+- 12 份产品宣传片原始 Markdown 来自 awesome-opus5-5-videos 的固定提交 [`92aee2f586ac0715cb3cbcb6384834f98a33383d`](https://github.com/yihui-dev/awesome-opus5-5-videos/commit/92aee2f586ac0715cb3cbcb6384834f98a33383d)，完整保留，不用摘要替代原文。
+- 保留原作者、原帖、观看入口及上游 MIT LICENSE；不包含视频、图片、商标素材或音乐。来源索引记录文件哈希、素材依赖、模板输入、原文技术与重做标签的区别。
+- 详细来源、保留范围与读取规则见 [技能来源记录](skills/media/bella-product-promo/references/provenance.md)。新增后合集为 1 个主入口与 10 个专项技能，共 11 项。
 
 ## 路由参考
 

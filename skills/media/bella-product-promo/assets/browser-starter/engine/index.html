@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>未制作 — Bella Product Promo</title>
+<style>
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#202020;color:#ddd;font:24px system-ui}
+main{height:100%;display:grid;place-content:center;text-align:center;gap:12px}small{font-size:16px;color:#aaa}
+</style>
+<main id="BELLA_PROMO_UNAUTHORED"><strong>未制作：这里还没有宣传片</strong><small>请根据 brief.json 编写实际画面、文字、镜头与声音。</small></main>
+<script type="module">
+import {waitForAssets} from '../protocol.js';
+// Replace the placeholder with authored scenes. No default marketing scene is supplied.
+// Every value must come from t (seconds); do not integrate positions from the last call.
+// GSAP: create paused timeline, then timeline.time(t, false); no autonomous playback.
+// Three.js: update all transforms from t, call renderer.render(scene,camera), then return.
+window.seek = async function seek(t) {
+  await waitForAssets();
+  document.documentElement.dataset.time = String(t);
+};
+</script>
+</html>

@@ -10,7 +10,7 @@
 npx -y skills add SucRunBug/bella-skill -g --all
 ```
 
-这会安装 **1 个主入口 + 9 个专项技能**。重开会话后，直接说：
+这会安装 **1 个主入口 + 10 个专项技能**。重开会话后，直接说：
 
 > 使用 $bella-skill，我想练十分钟日常英语口语。
 
@@ -19,6 +19,8 @@ npx -y skills add SucRunBug/bella-skill -g --all
 > 使用 $bella-skill，读取这个对标视频，按讲述顺序整理原话和画面线索。
 
 > 使用 $bella-skill，这是我的音乐和歌词，帮我做成可以继续修改的二维动画 MV。
+
+> 使用 $bella-skill，这是我的产品网址，帮我选风格并制作一支产品宣传片。
 
 > 使用 $bella-skill，我已经有论文草稿，帮我检查贡献与证据是否对应。
 
@@ -39,6 +41,7 @@ npx -y skills add SucRunBug/bella-skill -g --skill bella-speaking-coach
 | `research/` 科研 | [bella-ai4s](skills/research/bella-ai4s/SKILL.md) | 文献、研究方案、实验复现、分析、论文、科研图表与汇报 |
 | `media/` 自媒体 | [bella-ai-collage-maker](skills/media/bella-ai-collage-maker/SKILL.md) | 半调纸拼贴 B-roll 静帧、首尾帧与视频制作包 |
 | `media/` 自媒体 | [bella-music-mv](skills/media/bella-music-mv/SKILL.md) | 从音乐和歌词制作可编辑的程序化二维动画 MV、成片与检查材料 |
+| `media/` 自媒体 | [bella-product-promo](skills/media/bella-product-promo/SKILL.md) | 产品宣传与发布片；9 种风格、6 条技术路线、完整参考提示词与可编辑成片 |
 | `media/` 自媒体 | [talking-head-video-packaging](skills/media/talking-head-video-packaging/SKILL.md) | 口播精剪、字幕、抠像、配图和时间线包装 |
 | `media/` 自媒体 | [bella-writer](skills/media/bella-writer/SKILL.md) | 从主题、资料、大纲或已有稿件进入文案创作与修订 |
 | `media/` 自媒体 | [yanmai-video-reading](skills/media/yanmai-video-reading/SKILL.md) | 对标视频读取、转写、顺序拆解和画面备注 |
@@ -68,6 +71,7 @@ skills/
 ├── media/                             # 自媒体
 │   ├── bella-ai-collage-maker/
 │   ├── bella-music-mv/
+│   ├── bella-product-promo/
 │   ├── talking-head-video-packaging/
 │   ├── bella-writer/
 │   └── yanmai-video-reading/
@@ -82,6 +86,7 @@ skills/
 - 基础脚本使用 Python 3.10+；媒体处理按需使用 ffmpeg / ffprobe 和可用的转写后端。
 - 拼贴需要宿主提供图片生成能力；默认交付制作包，自动生成视频要有用户明确要求和可用模型。
 - 音乐 MV 自带程序化二维动画起步工程和新手引导；需要 Node.js、可运行的 Chrome / Chromium、ffmpeg / ffprobe。提供音乐与歌词即可开始，Agent 完成分镜、场景代码、渲染检查和 MP4 导出；精确歌词对齐按可用工具和人工校正处理。
+- 产品宣传片先引导产品、受众、卖点与发布规格，按需选择 HTML/Canvas/SVG、GSAP、Remotion、Three.js、Blender 或混合制作；保留 12 份完整原始提示词。内置浏览器起步工程与逐帧渲染协议，其他路线依实际工具执行；安装技能不会预装所有引擎。
 - 口播包装需要可连接的 ChatCut Desktop 与对应编辑能力。本合集不捆绑 ChatCut、所有配套技能、用户模板或项目素材。
 - 3D 建模需要用户自己的 Tripo API Key；Blender 和游戏引擎按任务配置，资产能力不等于完整游戏开发环境。
 - 安装 Skill 不会自动安装模型、专业软件或付费服务。工具缺失时应如实说明可完成的范围。

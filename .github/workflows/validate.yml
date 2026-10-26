@@ -23,6 +23,8 @@ jobs:
             sudo apt-get update
             sudo apt-get install -y ffmpeg
           fi
+      - run: python -m unittest discover -s skills/media/bella-product-promo/tests -p 'test_*.py' -v
+      - run: node --check skills/media/bella-product-promo/assets/browser-starter/render.mjs
       - run: python -m unittest discover -s skills/media/bella-music-mv/tests -p 'test_*.py' -v
       - run: node --test skills/media/bella-music-mv/tests/test_engine.mjs
       - run: python -m unittest discover -s skills/english/bella-speaking-coach/tests -p 'test_*.py' -v

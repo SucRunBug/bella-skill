@@ -6,7 +6,7 @@
 npx -y skills add SucRunBug/bella-skill -g --all
 ```
 
-安装器会发现 10 个技能，包括主入口和 9 个成员。要指定宿主：
+安装器会发现 11 个技能，包括主入口和 10 个成员。要指定宿主：
 
 ```bash
 npx -y skills add SucRunBug/bella-skill -g --skill '*' --agent codex -y
@@ -26,6 +26,9 @@ npx -y skills add SucRunBug/bella-skill -g --skill bella-ai4s
 
 # 仅音乐 MV（包含动画起步工程和新手指引）
 npx -y skills add SucRunBug/bella-skill -g --skill bella-music-mv
+
+# 仅产品宣传片（含风格/技术选项、完整提示词和浏览器起步工程）
+npx -y skills add SucRunBug/bella-skill -g --skill bella-product-promo
 
 # 查看可发现的技能
 npx -y skills add SucRunBug/bella-skill --list
@@ -63,3 +66,5 @@ python3 skills/bella-skill/scripts/list_skills.py --check
 各成员 README 保留原独立项目的详细说明；本页的合集安装方式为统一入口。需要 Python、媒体工具、ASR、ChatCut 或 Tripo 时，在相应任务开始时检查，不为安装合集而预装所有环境。
 
 音乐 MV 使用 Node.js、Chrome / Chromium、ffmpeg / ffprobe；按 [bella-music-mv](../skills/media/bella-music-mv/SKILL.md) 的新手引导上传音乐与歌词，再由 Agent 在项目目录准备依赖并制作。安装包保留动画运行时及其 MIT 许可证，不包含参考 MV 的歌曲、原分镜或用户作品。
+
+产品宣传片见 [bella-product-promo](../skills/media/bella-product-promo/SKILL.md)：先给产品网址或资料，再说明受众、主卖点和发布位置；其余可让 Agent 推荐。12 份原始提示词保留在技能内，按所选风格加载。原生 HTML/GSAP/Three.js 可复用浏览器寻帧底座；Remotion、Blender 和混合路线按各自实际工具准备，不因安装 skill 自动具备渲染环境。
