@@ -11,19 +11,32 @@ MAIN = REPO / "skills/bella-skill"
 spec = importlib.util.spec_from_file_location("discovery", MAIN / "scripts/list_skills.py")
 discovery = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(discovery)
+CATALOG = json.loads((MAIN / "references/catalog.json").read_text(encoding="utf-8"))["skills"]
+MEMBER_NAMES = {entry["name"] for entry in CATALOG}
 
 
 class DiscoveryTests(unittest.TestCase):
-    def test_source_checkout_discovers_eight_unique_members(self):
+    def test_source_checkout_discovers_catalog_members(self):
         rows = discovery.discover(MAIN)
-        self.assertEqual(len(rows), 8)
-        self.assertEqual(len({row["name"] for row in rows}), 8)
+        self.assertEqual(len(rows), len(CATALOG))
+        self.assertEqual({row["name"] for row in rows}, MEMBER_NAMES)
+        self.assertEqual(len(rows), len({row["name"] for row in rows}))
         self.assertTrue(all(row["status"] == "available" for row in rows))
         self.assertTrue(all(Path(row["skill_file"]).is_file() for row in rows))
 
     def test_category_limits_candidates(self):
-        rows = discovery.discover(MAIN, "english")
-        self.assertEqual({row["name"] for row in rows}, {"bella-speaking-coach", "bella-audio-listening"})
+        for category in {entry["category"] for entry in CATALOG}:
+            with self.subTest(category=category):
+                rows = discovery.discover(MAIN, category)
+                expected = {entry["name"] for entry in CATALOG if entry["category"] == category}
+                self.assertEqual({row["name"] for row in rows}, expected)
+
+    def test_music_mv_is_routed_in_media(self):
+        row = next(row for row in discovery.discover(MAIN, "media") if row["name"] == "bella-music-mv")
+        self.assertEqual(row["path"], "media/bella-music-mv")
+        self.assertEqual(row["status"], "available")
+        self.assertIn("音乐与歌词", row["handoff"])
+        self.assertIn("MP4", row["handoff"])
 
     def flat_install(self, base):
         root = base / "bella-skill"
@@ -41,7 +54,22 @@ class DiscoveryTests(unittest.TestCase):
             link = base / "agent-entry"
             link.symlink_to(root, target_is_directory=True)
             rows = discovery.discover(link)
+            self.assertEqual({row["name"] for row in rows}, MEMBER_NAMES)
             self.assertTrue(all(row["status"] == "available" for row in rows))
+
+    def test_categorized_install_discovers_all_members(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            base = Path(tmp)
+            root = base / "bella-skill"
+            shutil.copytree(MAIN, root)
+            for entry in CATALOG:
+                target = base / entry["path"]
+                target.mkdir(parents=True)
+                shutil.copy2(REPO / "skills" / entry["path"] / "SKILL.md", target / "SKILL.md")
+            rows = discovery.discover(root)
+            self.assertEqual({row["name"] for row in rows}, MEMBER_NAMES)
+            self.assertTrue(all(row["status"] == "available" for row in rows))
+            self.assertTrue(all(Path(row["skill_file"]).is_relative_to(base.resolve()) for row in rows))
 
     def test_missing_member_is_reported(self):
         with tempfile.TemporaryDirectory() as tmp:

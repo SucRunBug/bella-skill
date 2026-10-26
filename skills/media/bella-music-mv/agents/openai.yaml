@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bella 音乐 MV"
+  short_description: "上传音乐和歌词，自主完成统一叙事、角色、动画与字幕的完整 MV 成片"
+  default_prompt: "使用 $bella-music-mv，根据我上传的音乐和歌词，自主完成分镜、动画、检查并交付完整 MV。"
