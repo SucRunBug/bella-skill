@@ -10,7 +10,7 @@
 npx -y skills add SucRunBug/bella-skill -g --all
 ```
 
-这会安装 **1 个主入口 + 10 个专项技能**。重开会话后，直接说：
+这会安装 **1 个主入口 + 11 个专项技能**。重开会话后，直接说：
 
 > 使用 $bella-skill，我想练十分钟日常英语口语。
 
@@ -21,6 +21,8 @@ npx -y skills add SucRunBug/bella-skill -g --all
 > 使用 $bella-skill，这是我的音乐和歌词，帮我做成可以继续修改的二维动画 MV。
 
 > 使用 $bella-skill，这是我的产品网址，帮我选风格并制作一支产品宣传片。
+
+> 使用 $bella-skill，主题是双十一女大学生宿舍平价好物征集，先确定视觉风格，再做整套小红书图文。
 
 > 使用 $bella-skill，我已经有论文草稿，帮我检查贡献与证据是否对应。
 
@@ -45,6 +47,7 @@ npx -y skills add SucRunBug/bella-skill -g --skill bella-speaking-coach
 | `media/` 自媒体 | [talking-head-video-packaging](skills/media/talking-head-video-packaging/SKILL.md) | 口播精剪、字幕、抠像、配图和时间线包装 |
 | `media/` 自媒体 | [bella-writer](skills/media/bella-writer/SKILL.md) | 从主题、资料、大纲或已有稿件进入文案创作与修订 |
 | `media/` 自媒体 | [yanmai-video-reading](skills/media/yanmai-video-reading/SKILL.md) | 对标视频读取、转写、顺序拆解和画面备注 |
+| `media/` 自媒体 | [xhs-bot-content-pack](skills/media/xhs-bot-content-pack/SKILL.md) | 先确认视觉，再配齐Bot封面、9款清单内页、标题正文标签与带图来源表 |
 | `game-3d/` 3D 游戏 | [tripo-3d](skills/game-3d/tripo-3d/SKILL.md) | 文字 / 图片建模、绑定、动画、模型检查与游戏资产接入 |
 
 ## 主入口怎样路由
@@ -74,7 +77,8 @@ skills/
 │   ├── bella-product-promo/
 │   ├── talking-head-video-packaging/
 │   ├── bella-writer/
-│   └── yanmai-video-reading/
+│   ├── yanmai-video-reading/
+│   └── xhs-bot-content-pack/
 └── game-3d/                           # 3D 游戏
     └── tripo-3d/
 ```
@@ -89,6 +93,7 @@ skills/
 - 产品宣传片先引导产品、受众、卖点与发布规格，按需选择 HTML/Canvas/SVG、GSAP、Remotion、Three.js、Blender 或混合制作；保留 12 份完整原始提示词。内置浏览器起步工程与逐帧渲染协议，其他路线依实际工具执行；安装技能不会预装所有引擎。
 - 口播包装需要可连接的 ChatCut Desktop 与对应编辑能力。本合集不捆绑 ChatCut、所有配套技能、用户模板或项目素材。
 - 3D 建模需要用户自己的 Tripo API Key；Blender 和游戏引擎按任务配置，资产能力不等于完整游戏开发环境。
+- 小红书Bot先提交配色、排版、IP和文案，用户确认后才调用生图；默认1张封面＋3张内页、9款商品，并附真实来源与带图Excel。使用示例见[专项说明](skills/media/xhs-bot-content-pack/README.md)。
 - 安装 Skill 不会自动安装模型、专业软件或付费服务。工具缺失时应如实说明可完成的范围。
 
 ## 验证与来源

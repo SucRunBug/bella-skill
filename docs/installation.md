@@ -6,7 +6,7 @@
 npx -y skills add SucRunBug/bella-skill -g --all
 ```
 
-安装器会发现 11 个技能，包括主入口和 10 个成员。要指定宿主：
+安装器会发现 12 个技能，包括主入口和 11 个成员。要指定宿主：
 
 ```bash
 npx -y skills add SucRunBug/bella-skill -g --skill '*' --agent codex -y
@@ -29,6 +29,9 @@ npx -y skills add SucRunBug/bella-skill -g --skill bella-music-mv
 
 # 仅产品宣传片（含风格/技术选项、完整提示词和浏览器起步工程）
 npx -y skills add SucRunBug/bella-skill -g --skill bella-product-promo
+
+# 仅小红书Bot图文包（先确认视觉，再生成整套）
+npx -y skills add SucRunBug/bella-skill -g --skill xhs-bot-content-pack
 
 # 查看可发现的技能
 npx -y skills add SucRunBug/bella-skill --list
@@ -68,3 +71,5 @@ python3 skills/bella-skill/scripts/list_skills.py --check
 音乐 MV 使用 Node.js、Chrome / Chromium、ffmpeg / ffprobe；按 [bella-music-mv](../skills/media/bella-music-mv/SKILL.md) 的新手引导上传音乐与歌词，再由 Agent 在项目目录准备依赖并制作。安装包保留动画运行时及其 MIT 许可证，不包含参考 MV 的歌曲、原分镜或用户作品。
 
 产品宣传片见 [bella-product-promo](../skills/media/bella-product-promo/SKILL.md)：先给产品网址或资料，再说明受众、主卖点和发布位置；其余可让 Agent 推荐。12 份原始提示词保留在技能内，按所选风格加载。原生 HTML/GSAP/Three.js 可复用浏览器寻帧底座；Remotion、Blender 和混合路线按各自实际工具准备，不因安装 skill 自动具备渲染环境。
+
+小红书Bot图文包见 [xhs-bot-content-pack](../skills/media/xhs-bot-content-pack/README.md)：给一个主题即可开始，先确认本次配色、排版和IP，再生成图片。安装包保留三张历史视觉参考，不包含用户当前任务商品、购物记录或临时截图；价格、库存与时间节点每次重新核对。

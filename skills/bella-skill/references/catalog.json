@@ -143,6 +143,22 @@
       "commit": "9e441e71481ecf311f88d1458b5720b2b2b4ff95"
     },
     {
+      "name": "xhs-bot-content-pack",
+      "title": "小红书Bot图文包",
+      "category": "media",
+      "category_label": "自媒体",
+      "path": "media/xhs-bot-content-pack",
+      "aliases": [],
+      "handoff": "已有主题、人群或预算 → 先交视觉与内容方案；用户确认后生成封面、每页3款内页、标题正文话题、带图来源表和完整包",
+      "excludes": "未确认视觉就生图；单条文案或单张图片修改扩成全流程；自动发布或下单",
+      "dependencies": [
+        "Python 3.10+；联网检索、图片生成和电子表格能力由宿主提供；安装Skill不会自动开通模型"
+      ],
+      "source": "https://github.com/SucRunBug/bella-skill",
+      "commit": "80fd2b87bdd3fb6cb5cd53c8204012f987a218f9",
+      "source_note": "用户在图文Bot工作流中创建的本地Skill，2026-11-07纳入本仓库；此提交为集成前基线，不表示新Skill已存在于该提交。"
+    },
+    {
       "name": "tripo-3d",
       "title": "3D 建模与游戏资产",
       "category": "game-3d",
